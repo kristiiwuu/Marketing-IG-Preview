@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ascend Instagram Preview</title>
+
+    <style>
+        body, h1 {
+            margin: 0px;
+            padding: 0px;
+        }
+        #header {
+            width: auto;
+            height: 200px;
+            background-color: #F4C588;
+        }
+        h1 {
+            line-height: 200px;
+            text-align: center;
+        }
+
+        #content {
+            background-color: white;
+            width: auto;
+            height: auto;
+        }
+
+        #row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7, #row-8 {
+            width: auto;
+            height: 303px;
+            display: flex;
+            justify-content: center;   
+            margin: 0px;         
+        }
+        .pic {
+            /* background-color: pink; */
+            width: 300px;
+            height: 300px;
+            margin: 1px;
+
+            position: relative;
+            overflow: hidden;
+        }
+        .pic > img {
+            height: 300px;
+            width: 300px;
+        }
+        .top > .pic 
+        {
+            margin: 2px 1px 1px;
+        }
+
+        #add-post {
+            height: 100px;
+            width: auto;
+            /* background-color: pink; */
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1>Preview</h1>
+    </div>
+    <div id="add-post">
+        <div class="form-row">
+            <button id="upload">Upload</button>
+            <input id="link" type="text" placeholder="img/file-name">
+        </div>
+    </div>
+    <div id="content">
+        <div id="row-8" class="top">
+            <!-- from left to right -->
+            <div class="pic add">
+                <img src="">
+            </div>
+            <div class="pic">
+                <img src="img/photo-day-recap.png">
+            </div>
+            <div class="pic">
+                <img src="img/pm-panel.png">
+            </div>
+        </div>
+        <div id="row-7" class="top">
+            <!-- from left to right -->
+            <div class="pic">
+                <img src="img/spring-retreat.png">
+            </div>
+            <div class="pic">
+                <img src="img/photo-day.png">
+            </div>
+            <div class="pic">
+                <img src="img/fam-reveal-recap.png">
+            </div>
+        </div>
+        <div id="row-6" class="top">
+            <!-- from left to right -->
+            <div class="pic">
+                <img src="img/workshop-recap.png">
+            </div>
+            <div class="pic">
+                <img src="img/fam-reveal.png">               
+            </div>
+            <div class="pic">
+                <img src="img/resume-workshop.png">
+            </div>
+        </div>
+        <div id="row-5" class="top">
+            <!-- from left to right -->
+            <div class="pic">
+                <img src="img/membership-event1-recap.png">
+            </div>
+            <div class="pic">
+                <img src="img/meet-fam-heads.png">
+            </div>
+            <div class="pic">
+                <img src="img/membership-event-1.png">
+            </div>
+        </div>
+        <div id="row-4" class="top">
+            <!-- from left to right -->
+            <div class="pic">
+                <img src="img/timeline-2.png">
+            </div>
+            <div class="pic">
+                <img src="img/info-session-recap.png">
+            </div>
+            <div class="pic">
+                <img src="img/apps-due.png" alt="Involvement Fair">
+            </div>
+        </div>
+        <div id="row-3" class="top">
+            <!-- from left to right -->
+            <div class="pic">
+                <img src="img/Recruitment-Reel-2.png">
+            </div>
+            <div class="pic">
+                <img src="img/info-session-2.png">
+            </div>
+            <div class="pic">
+                <img src="img/Involvement-Fair.png" alt="Involvement Fair">
+            </div>
+        </div>
+        <div id="row-2" class="top">
+            <!-- from left to right -->
+            <div class="pic">
+                <img src="img/Info-Session-1.png" alt="Info Session #1">
+            </div>
+            <div class="pic">
+                <img src="img/Ascend-Leaders.png" alt="Ascend Leaders Explained">
+            </div>
+            <div class="pic">
+                <img src="img/Recruitment-Reel.png" alt="Spring '24 Recruitment">
+            </div>
+        </div>
+        <div id="row-1">
+            <!-- from left to right -->
+            <div class="pic">
+                <img src="img/Apps-Open.png" alt="Applications Open">
+            </div>
+            <div class="pic">
+                <img src="img/Spring-Recruitment.png" alt="Ascend Leaders Spring Recruitment Timeline">
+            </div>
+            <div class="pic">
+                <img src="img/New-Eboard.png" alt="Ascend's New Eboard Members">
+                <!-- <img src="img/img.png">
+                <input type="file"> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $('#upload').click(function(){
+        var linkInput = $('#link').val();
+        $('.add > img').attr('src', linkInput);
+    })
+</script>
+</html>
